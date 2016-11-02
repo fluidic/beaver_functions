@@ -2,7 +2,7 @@
 
 const spawn = require('child_process').spawn;
 
-exports.beaverGET = function beaver(req, res) {
+exports.beaver = function beaver(req, res) {
     const child = spawn('./third_party/dart-linux-x64/dart',
         [
             'beaver.dart.snapshot',
